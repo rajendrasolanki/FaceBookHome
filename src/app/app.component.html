@@ -1,3 +1,94 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+    <div *ngIf="isHeader">
+        <div class="logo">
+            Demo
+        </div>
+        <div class="search">
+            <input type="search">
+            <button (click)="getWidth()"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="profilePic">
+            <img src="../assets/image/userProfilePic/profilePic.jpg">
+        </div>
+        <div class="user" *ngIf="User">
+            <span>{{User.name}}</span>
+        </div>
+        <div class="home">
+            <span>Home</span>
+            <i class="fa fa-user-plus" ></i>
+            <i class="fa fa-envelope" ></i>
+            <i class="fa fa-globe" ></i>
+        </div>
+        <div class="setting">
+            <i class="fa fa-question-circle" ></i>
+            <i class="fa fa-sort-down" ></i>
+        </div>
+    </div>
+    <div *ngIf="!isHeader">
+        <div class="logo">
+            D
+        </div>
+        <div class="title">
+            {{title}}
+        </div>
+        <div class="search">
+            <input *ngIf="isHeader" type="search">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+</header>
+<section>
+    <div *ngIf="!isHeader" class="menu">
+        <i class="fa fa-newspaper-o" [ngClass]="{'active': isSection2}" (click)="showSection(2)"></i>
+        <i class="fa fa-group"  [ngClass]="{'active': isSection4}" (click)="showSection(4)"></i>
+        <i class="fa fa-buysellads" [ngClass]="{'active': isSection3}"  (click)="showSection(3)"></i>
+        <i class="fa  fa-navicon"  [ngClass]="{'active': isSection1}" (click)="showSection(1)"></i>
+    </div>
+    <div *ngIf="isSection1" (appOnCreate)="sectionHeight(1)"  id="section_1" class="section_1" [ngClass]="{'scrollStopTopSection1':isSection1FixedTop,'scrollStopBottomSection1':isSection1FixedBottom}">
+        <a href="#" ><img src="../assets/image/userProfilePic/profilePic.jpg"><span *ngIf="User">{{User.name}}</span></a>
+        <a href="#" ><i class="fa fa-newspaper-o newsFeed" ></i> News Feed</a>
+        <a href="#" ><i class="fa fa-envelope message" ></i> Message</a>
+        <span><b>Explore</b></span>
+        <a href="#" ><i class="fa fa-calendar-check-o event" ></i> Event</a>
+        <a href="#" ><i class="fa fa-group group" ></i> Group</a>
+        <a href="#" ><i class="fa fa-file-o pages" ></i> Pages</a>
+        <a href="#" ><i class="fa fa-list-alt friendList" ></i> Friends list</a>
+        <a href="#" ><i class="fa fa-clock-o onThisDay" ></i> On this day</a>
+    </div>
+    <div *ngIf="isSection2" class="section_2 " [ngClass]="{'scrollSection2':isSection1FixedTop || isSection1FixedBottom}">
+        <div class="content" *ngFor="let news of newsFeed">
+            <a href="#" ><img src="../assets/image/friends/{{news.dp}}"><span>{{news.name}}</span></a>
+            <hr>
+            <span>{{news.postText}}</span>
+            <img class="newsImg" src="../assets/image/neswFeedPic/{{news.PostImg}}">
+            <span>{{news.ImgText}}</span>
+            <hr>
+            <a href="#"><i class="fa fa-thumbs-up">Like</i> {{news.like}}</a>
+            <a href="#"><i class="fa fa-comment">Comment</i> {{news.comment}}</a>
+            <a href="#"><i class="fa fa-share">Share</i></a>
+        </div>
+    </div>
+    <div  *ngIf="isSection3" (appOnCreate)="sectionHeight(3)" id="section_3" class="section_3" [ngClass]="{'scrollStopTopSection3':isSection3FixedTop,'scrollStopBottomSection3':isSection3FixedBottom}">
+        <div class="content" *ngFor="let adds of advertisement">
+            <span>{{adds.title}}</span>
+            <img src="../assets/image/advertisement/{{adds.image}}">
+            <span>{{adds.about}}</span>
+        </div>
+    </div>
+    <div *ngIf="isSection4" class="section_4">
+        <div class="row_1">
+            <div *ngFor="let friend of friends">
+                <a href="#" ><img src="../assets/image/friends/{{friend.dp}}"><span>{{friend.name}}</span></a>
+            </div>
+        </div>
+        <div class="row_2">
+            <div *ngFor="let friend of friends">
+                <a href="#" >
+                    <img src="../assets/image/friends/{{friend.dp}}">
+                    <span>{{friend.name}}</span>
+                    <i class="fa  fa-circle online"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

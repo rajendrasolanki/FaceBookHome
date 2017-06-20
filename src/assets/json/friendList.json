@@ -1,0 +1,40 @@
+{
+    "friends":[
+        {
+            "id":1,
+            "name":"BCD",
+            "onLine":"",
+            "dp":"img (1).jpg"
+        },
+        {
+            "id":2,
+            "name":"MNB",
+            "onLine":"",
+            "dp":"img (2).jpg"
+        },
+        {
+            "id":3,
+            "name":"BNM",
+            "onLine":"",
+            "dp":"img (3).jpg"
+        },
+        {
+            "id":4,
+            "name":"ASDF",
+            "onLine":"",
+            "dp":"img (4).jpg"
+        },
+        {
+            "id":5,
+            "name":"JKL",
+            "onLine":"",
+            "dp":"img (5).jpg"
+        },
+        {
+            "id":6,
+            "name":"PQR",
+            "onLine":"",
+            "dp":"img (6).jpg"
+        }
+    ]
+}

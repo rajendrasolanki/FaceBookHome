@@ -1,0 +1,104 @@
+{
+    "newsFeed":[
+        {
+            "id":1,
+            "name":"BCD",
+            "dp":"img (1).jpg",
+            "postText":"Hello World",
+            "PostImg":"img (1).jpg",
+            "ImgText":"Wonder Full",
+            "like":"1",
+            "comment":"5"
+        },
+        {
+            "id":2,
+            "name":"JKL",
+            "dp":"img (5).jpg",
+            "postText":"",
+            "PostImg":"img (8).jpg",
+            "ImgText":"Wonder Full",
+            "like":"21",
+            "comment":"7"
+        },
+        {
+            "id":3,
+            "name":"PQR",
+            "dp":"img (6).jpg",
+            "postText":"",
+            "PostImg":"img (10).jpg",
+            "ImgText":"Wonder Full",
+            "like":"1",
+            "comment":"5"
+        },
+        {
+            "id":4,
+            "name":"ASDF",
+            "dp":"img (4).jpg",
+            "postText":"Hello World",
+            "PostImg":"img (9).jpg",
+            "ImgText":"Wonder Full",
+            "like":"1",
+            "comment":"5"
+        },
+        {
+            "id":5,
+            "name":"BNM",
+            "dp":"img (3).jpg",
+            "postText":"Hello World",
+            "PostImg":"img (7).jpg",
+            "ImgText":"Wonder Full",
+            "like":"6",
+            "comment":"3"
+        },
+        {
+            "id":6,
+            "name":"JKL",
+            "dp":"img (5).jpg",
+            "postText":"Hello World",
+            "PostImg":"img (5).jpg",
+            "ImgText":"Wonder Full",
+            "like":"18",
+            "comment":"11"
+        },
+        {
+            "id":7,
+            "name":"ASDF",
+            "dp":"img (4).jpg",
+            "postText":"Good Morning",
+            "PostImg":"img (6).jpg",
+            "ImgText":"",
+            "like":"6",
+            "comment":"5"
+        },
+        {
+            "id":8,
+            "name":"BNM",
+            "dp":"img (3).jpg",
+            "postText":"",
+            "PostImg":"img (2).jpg",
+            "ImgText":"",
+            "like":"15",
+            "comment":"3"
+        },
+        {
+            "id":9,
+            "name":"BCD",
+            "dp":"img (1).jpg",
+            "postText":"Nature",
+            "PostImg":"img (3).jpg",
+            "ImgText":"",
+            "like":"1",
+            "comment":""
+        },
+        {
+            "id":10,
+            "name":"MNB",
+            "dp":"img (2).jpg",
+            "postText":"",
+            "PostImg":"img (4).jpg",
+            "ImgText":"Wonder Full",
+            "like":"6",
+            "comment":"2"
+        }
+    ]
+}

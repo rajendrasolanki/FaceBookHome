@@ -1,0 +1,28 @@
+{
+    "advertisement":[
+        {
+            "id":1,
+            "title":"Trip",
+            "image":"img (3).jpg",
+            "about":"get trip"
+        },
+        {
+            "id":2,
+            "title":"Nature",
+            "image":"img (4).jpg",
+            "about":"take a ride"
+        },
+        {
+            "id":3,
+            "title":"Tour",
+            "image":"img (1).jpg",
+            "about":"take a tour"
+        },
+        {
+            "id":4,
+            "title":"Thar",
+            "image":"img (2).jpg",
+            "about":"Desert view"
+        }
+    ]
+}
